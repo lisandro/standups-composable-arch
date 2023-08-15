@@ -39,6 +39,8 @@ struct StandupFormFeature: Reducer {
          */
     }
     
+    @Dependency(\.uuid) var uuid
+    
     var body: some ReducerOf<Self> {
         BindingReducer()
             .onChange(of: \.standup.title) { oldValue, newValue in
@@ -49,14 +51,14 @@ struct StandupFormFeature: Reducer {
             switch action {
                 
             case .addAttendeeButtonTapped:
-                let id = UUID()
+                let id = uuid()
                 state.standup.attendees.append(Attendee(id: id))
                 state.focus = .attendee(id)
                 return .none
             case let .deleteAttendees(atOffsets: indices):
                 state.standup.attendees.remove(atOffsets: indices)
                 if state.standup.attendees.isEmpty {
-                    state.standup.attendees.append(Attendee(id: UUID()))
+                    state.standup.attendees.append(Attendee(id: uuid()))
                 }
                 
                 guard let firstIndex = indices.first else { return .none }

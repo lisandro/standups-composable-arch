@@ -22,6 +22,7 @@
 		A09319502A85139400E39345 /* StandupFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A093194F2A85139400E39345 /* StandupFormView.swift */; };
 		A0DD1B8F2A8BF0F4008E3D7A /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DD1B8E2A8BF0F4008E3D7A /* ThemePicker.swift */; };
 		A0DD1B912A8BF11B008E3D7A /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DD1B902A8BF11B008E3D7A /* ThemeView.swift */; };
+		A0F83AEC2A8C109A002805F3 /* StandupFormTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F83AEB2A8C109A002805F3 /* StandupFormTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		A093194F2A85139400E39345 /* StandupFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupFormView.swift; sourceTree = "<group>"; };
 		A0DD1B8E2A8BF0F4008E3D7A /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 		A0DD1B902A8BF11B008E3D7A /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		A0F83AEB2A8C109A002805F3 /* StandupFormTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupFormTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				A03D31C12A840722009B0180 /* StandupsTests.swift */,
+				A0F83AEB2A8C109A002805F3 /* StandupFormTest.swift */,
 			);
 			path = StandupsTests;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A03D31C22A840722009B0180 /* StandupsTests.swift in Sources */,
+				A0F83AEC2A8C109A002805F3 /* StandupFormTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
