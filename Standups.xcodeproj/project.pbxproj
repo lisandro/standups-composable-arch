@@ -20,6 +20,8 @@
 		A03D31E52A84108F009B0180 /* StandupsListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03D31E42A84108F009B0180 /* StandupsListFeature.swift */; };
 		A043F33F2A8A5BD100E01D4D /* StandupFormFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A043F33E2A8A5BD100E01D4D /* StandupFormFeature.swift */; };
 		A09319502A85139400E39345 /* StandupFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A093194F2A85139400E39345 /* StandupFormView.swift */; };
+		A0DD1B8F2A8BF0F4008E3D7A /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DD1B8E2A8BF0F4008E3D7A /* ThemePicker.swift */; };
+		A0DD1B912A8BF11B008E3D7A /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DD1B902A8BF11B008E3D7A /* ThemeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		A03D31E42A84108F009B0180 /* StandupsListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupsListFeature.swift; sourceTree = "<group>"; };
 		A043F33E2A8A5BD100E01D4D /* StandupFormFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupFormFeature.swift; sourceTree = "<group>"; };
 		A093194F2A85139400E39345 /* StandupFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupFormView.swift; sourceTree = "<group>"; };
+		A0DD1B8E2A8BF0F4008E3D7A /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
+		A0DD1B902A8BF11B008E3D7A /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,8 @@
 			children = (
 				A03D31DF2A841024009B0180 /* CardView.swift */,
 				A093194F2A85139400E39345 /* StandupFormView.swift */,
+				A0DD1B8E2A8BF0F4008E3D7A /* ThemePicker.swift */,
+				A0DD1B902A8BF11B008E3D7A /* ThemeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -309,7 +315,9 @@
 				A03D31E52A84108F009B0180 /* StandupsListFeature.swift in Sources */,
 				A03D31B32A840720009B0180 /* ContentView.swift in Sources */,
 				A03D31E02A841024009B0180 /* CardView.swift in Sources */,
+				A0DD1B8F2A8BF0F4008E3D7A /* ThemePicker.swift in Sources */,
 				A043F33F2A8A5BD100E01D4D /* StandupFormFeature.swift in Sources */,
+				A0DD1B912A8BF11B008E3D7A /* ThemeView.swift in Sources */,
 				A03D31B12A840720009B0180 /* StandupsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
