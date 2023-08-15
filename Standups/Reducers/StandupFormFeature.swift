@@ -8,7 +8,7 @@ import ComposableArchitecture
 import Foundation
 
 struct StandupFormFeature: Reducer {
-    struct State {
+    struct State: Equatable {
         @BindingState var focus: Field?
         @BindingState var standup: Standup //@BindingState to learn more
         
