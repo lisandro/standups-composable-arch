@@ -25,6 +25,15 @@ struct ContentView: View {
                     }
                 }
             }
+            .sheet(
+                store: self.store.scope(
+                    state: \.$addStandup,
+                    action: { .addStandup($0) }
+                ),
+                content: { store in
+                    StandupFormView(store: store)
+                }
+            )
         }
     }
 }
