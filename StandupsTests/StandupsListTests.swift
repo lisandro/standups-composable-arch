@@ -18,13 +18,28 @@ final class StandupsListTests: XCTestCase {
             $0.uuid = .incrementing
         })
         
-        
+        var standup: Standup = Standup(
+            id: UUID(0),
+            attendees: [.init(id: UUID(1))]
+        )
         await store.send(.addButtonTapped) {
             $0.addStandup = StandupFormFeature.State(
-                standup: Standup(id: UUID(0),
-                                 attendees: [.init(id: UUID(1))]
-                                )
+                standup: standup
             )
+        }
+        
+        standup.title = "Lisandro's Team Morning Sync"
+        await store.send(.addStandup(.presented(.set(\.$standup, standup)))) {
+            $0.addStandup?.standup.title = "Lisandro's Team Morning Sync"
+        }
+        
+        await store.send(.saveStandupButtonTapped) {
+            $0.standups[0] = Standup(
+                id: UUID(0),
+                attendees: [.init(id: UUID(1))],
+                title: "Lisandro's Team Morning Sync"
+            )
+            $0.addStandup = nil
         }
     }
     
