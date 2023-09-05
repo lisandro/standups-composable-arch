@@ -9,7 +9,7 @@ import ComposableArchitecture
 import Foundation
 
 struct StandupsListFeature: Reducer {
-    struct State {
+    struct State: Equatable {
         @PresentationState var addStandup: StandupFormFeature.State?
         var standups: IdentifiedArrayOf<Standup> = []
     }
