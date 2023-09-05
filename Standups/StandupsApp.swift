@@ -13,7 +13,9 @@ struct StandupsApp: App {
         WindowGroup {
             NavigationStack {
                 ContentView(
-                    store: Store(initialState: StandupsListFeature.State(),
+                    store: Store(initialState: StandupsListFeature.State(
+                        //Useful for deeplink addStandup: StandupFormFeature.State(focus: .attendee(Standup.mock.attendees[2].id), standup: .mock)
+                    ),
                                  reducer: {
                                      StandupsListFeature()
                                  }))
