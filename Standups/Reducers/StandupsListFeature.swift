@@ -17,6 +17,8 @@ struct StandupsListFeature: Reducer {
     enum Action {
         case addButtonTapped
         case addStandup(PresentationAction<StandupFormFeature.Action>)
+        case cancelStandupButtonTapped
+        case saveStandupButtonTapped
     }
     
     @Dependency(\.uuid) var uuid
@@ -28,6 +30,14 @@ struct StandupsListFeature: Reducer {
                 state.addStandup = StandupFormFeature.State(standup: Standup(id: self.uuid()))
                 return .none
             case .addStandup:
+                return .none
+            case .cancelStandupButtonTapped:
+                state.addStandup = nil
+                return .none
+            case .saveStandupButtonTapped:
+                guard let standup = state.addStandup?.standup else { return .none }
+                state.standups.append(standup)
+                state.addStandup = nil
                 return .none
             }
         }

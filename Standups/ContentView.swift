@@ -31,7 +31,22 @@ struct ContentView: View {
                     action: { .addStandup($0) }
                 ),
                 content: { store in
-                    StandupFormView(store: store)
+                    NavigationStack {
+                        StandupFormView(store: store)
+                            .navigationTitle("New standup")
+                            .toolbar {
+                                ToolbarItem {
+                                    Button("Save") {
+                                        viewStore.send(.saveStandupButtonTapped)
+                                    }
+                                }
+                                ToolbarItem(placement: .cancellationAction) {
+                                    Button("Cancel") {
+                                        viewStore.send(.cancelStandupButtonTapped)
+                                    }
+                                }
+                            }
+                    }
                 }
             )
         }

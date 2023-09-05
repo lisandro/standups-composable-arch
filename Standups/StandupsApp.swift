@@ -11,9 +11,13 @@ import SwiftUI
 struct StandupsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(store: Store(initialState: StandupsListFeature.State(), reducer: {
-                StandupsListFeature()
-            }))
+            NavigationStack {
+                ContentView(
+                    store: Store(initialState: StandupsListFeature.State(),
+                                 reducer: {
+                                     StandupsListFeature()
+                                 }))
+            }
         }
     }
 }
