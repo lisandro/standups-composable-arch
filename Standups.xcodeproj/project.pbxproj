@@ -23,6 +23,8 @@
 		A0DD1B8F2A8BF0F4008E3D7A /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DD1B8E2A8BF0F4008E3D7A /* ThemePicker.swift */; };
 		A0DD1B912A8BF11B008E3D7A /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DD1B902A8BF11B008E3D7A /* ThemeView.swift */; };
 		A0F8221C2AA79D5A001D1962 /* StandupsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8221B2AA79D5A001D1962 /* StandupsListTests.swift */; };
+		A0F8221E2AA7A88A001D1962 /* StandupDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8221D2AA7A88A001D1962 /* StandupDetailView.swift */; };
+		A0F822202AA7A98C001D1962 /* StandupDetailFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8221F2AA7A98C001D1962 /* StandupDetailFeature.swift */; };
 		A0F83AEC2A8C109A002805F3 /* StandupFormTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F83AEB2A8C109A002805F3 /* StandupFormTest.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 		A0DD1B8E2A8BF0F4008E3D7A /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 		A0DD1B902A8BF11B008E3D7A /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 		A0F8221B2AA79D5A001D1962 /* StandupsListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupsListTests.swift; sourceTree = "<group>"; };
+		A0F8221D2AA7A88A001D1962 /* StandupDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupDetailView.swift; sourceTree = "<group>"; };
+		A0F8221F2AA7A98C001D1962 /* StandupDetailFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupDetailFeature.swift; sourceTree = "<group>"; };
 		A0F83AEB2A8C109A002805F3 /* StandupFormTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupFormTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				A03D31DF2A841024009B0180 /* CardView.swift */,
+				A0F8221D2AA7A88A001D1962 /* StandupDetailView.swift */,
 				A093194F2A85139400E39345 /* StandupFormView.swift */,
 				A0DD1B8E2A8BF0F4008E3D7A /* ThemePicker.swift */,
 				A0DD1B902A8BF11B008E3D7A /* ThemeView.swift */,
@@ -176,6 +181,7 @@
 			children = (
 				A03D31E42A84108F009B0180 /* StandupsListFeature.swift */,
 				A043F33E2A8A5BD100E01D4D /* StandupFormFeature.swift */,
+				A0F8221F2AA7A98C001D1962 /* StandupDetailFeature.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -320,9 +326,11 @@
 				A03D31DE2A8407F8009B0180 /* Models.swift in Sources */,
 				A03D31E52A84108F009B0180 /* StandupsListFeature.swift in Sources */,
 				A03D31B32A840720009B0180 /* ContentView.swift in Sources */,
+				A0F822202AA7A98C001D1962 /* StandupDetailFeature.swift in Sources */,
 				A03D31E02A841024009B0180 /* CardView.swift in Sources */,
 				A0DD1B8F2A8BF0F4008E3D7A /* ThemePicker.swift in Sources */,
 				A043F33F2A8A5BD100E01D4D /* StandupFormFeature.swift in Sources */,
+				A0F8221E2AA7A88A001D1962 /* StandupDetailView.swift in Sources */,
 				A0DD1B912A8BF11B008E3D7A /* ThemeView.swift in Sources */,
 				A03D31B12A840720009B0180 /* StandupsApp.swift in Sources */,
 			);
