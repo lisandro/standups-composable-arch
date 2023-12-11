@@ -7,7 +7,7 @@
 import ComposableArchitecture
 import SwiftUI
 
-struct ContentView: View {
+struct StandupsListView: View {
     var store: StoreOf<StandupsListFeature>
     var body: some View {
         WithViewStore(self.store, observe: \.standups) { viewStore in
@@ -56,7 +56,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            ContentView(store: Store(initialState: StandupsListFeature.State(standups: [.mock]), reducer: {
+            StandupsListView(store: Store(initialState: StandupsListFeature.State(standups: [.mock]), reducer: {
                 StandupsListFeature()
             }))
         }

@@ -11,15 +11,9 @@ import SwiftUI
 struct StandupsApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
-                ContentView(
-                    store: Store(initialState: StandupsListFeature.State(
-                        //Useful for deeplink addStandup: StandupFormFeature.State(focus: .attendee(Standup.mock.attendees[2].id), standup: .mock)
-                    ),
-                                 reducer: {
-                                     StandupsListFeature()
-                                 }))
-            }
+            AppView(store: Store(initialState: AppFeature.State()){
+                AppFeature()
+            })
         }
     }
 }

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A03D31B12A840720009B0180 /* StandupsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03D31B02A840720009B0180 /* StandupsApp.swift */; };
-		A03D31B32A840720009B0180 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03D31B22A840720009B0180 /* ContentView.swift */; };
+		A03D31B32A840720009B0180 /* StandupsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03D31B22A840720009B0180 /* StandupsListView.swift */; };
 		A03D31B52A840722009B0180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A03D31B42A840722009B0180 /* Assets.xcassets */; };
 		A03D31B82A840722009B0180 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A03D31B72A840722009B0180 /* Preview Assets.xcassets */; };
 		A03D31C22A840722009B0180 /* StandupsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03D31C12A840722009B0180 /* StandupsTests.swift */; };
@@ -23,6 +23,7 @@
 		A0DCE5552AA8E4110065CC42 /* StandupDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DCE5542AA8E4110065CC42 /* StandupDetailView.swift */; };
 		A0DD1B8F2A8BF0F4008E3D7A /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DD1B8E2A8BF0F4008E3D7A /* ThemePicker.swift */; };
 		A0DD1B912A8BF11B008E3D7A /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DD1B902A8BF11B008E3D7A /* ThemeView.swift */; };
+		A0F60F572B273E010072DA11 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F60F562B273E010072DA11 /* AppView.swift */; };
 		A0F8221C2AA79D5A001D1962 /* StandupsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8221B2AA79D5A001D1962 /* StandupsListTests.swift */; };
 		A0F8221E2AA7A88A001D1962 /* StandupDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8221D2AA7A88A001D1962 /* StandupDetailView.swift */; };
 		A0F822202AA7A98C001D1962 /* StandupDetailFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8221F2AA7A98C001D1962 /* StandupDetailFeature.swift */; };
@@ -49,7 +50,7 @@
 /* Begin PBXFileReference section */
 		A03D31AD2A840720009B0180 /* Standups.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Standups.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03D31B02A840720009B0180 /* StandupsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupsApp.swift; sourceTree = "<group>"; };
-		A03D31B22A840720009B0180 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A03D31B22A840720009B0180 /* StandupsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupsListView.swift; sourceTree = "<group>"; };
 		A03D31B42A840722009B0180 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A03D31B72A840722009B0180 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A03D31BD2A840722009B0180 /* StandupsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StandupsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +66,7 @@
 		A0DCE5542AA8E4110065CC42 /* StandupDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupDetailView.swift; sourceTree = "<group>"; };
 		A0DD1B8E2A8BF0F4008E3D7A /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 		A0DD1B902A8BF11B008E3D7A /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		A0F60F562B273E010072DA11 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		A0F8221B2AA79D5A001D1962 /* StandupsListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupsListTests.swift; sourceTree = "<group>"; };
 		A0F8221D2AA7A88A001D1962 /* StandupDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupDetailView.swift; sourceTree = "<group>"; };
 		A0F8221F2AA7A98C001D1962 /* StandupDetailFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupDetailFeature.swift; sourceTree = "<group>"; };
@@ -120,7 +122,6 @@
 		A03D31AF2A840720009B0180 /* Standups */ = {
 			isa = PBXGroup;
 			children = (
-				A03D31B22A840720009B0180 /* ContentView.swift */,
 				A03D31B02A840720009B0180 /* StandupsApp.swift */,
 				A03D31B42A840722009B0180 /* Assets.xcassets */,
 				A03D31E22A841066009B0180 /* Models */,
@@ -165,8 +166,10 @@
 				A03D31DF2A841024009B0180 /* CardView.swift */,
 				A0F8221D2AA7A88A001D1962 /* StandupDetailView.swift */,
 				A093194F2A85139400E39345 /* StandupFormView.swift */,
+				A03D31B22A840720009B0180 /* StandupsListView.swift */,
 				A0DD1B8E2A8BF0F4008E3D7A /* ThemePicker.swift */,
 				A0DD1B902A8BF11B008E3D7A /* ThemeView.swift */,
+				A0F60F562B273E010072DA11 /* AppView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -328,11 +331,12 @@
 				A09319502A85139400E39345 /* StandupFormView.swift in Sources */,
 				A03D31DE2A8407F8009B0180 /* Models.swift in Sources */,
 				A03D31E52A84108F009B0180 /* StandupsListFeature.swift in Sources */,
-				A03D31B32A840720009B0180 /* ContentView.swift in Sources */,
+				A03D31B32A840720009B0180 /* StandupsListView.swift in Sources */,
 				A0F822202AA7A98C001D1962 /* StandupDetailFeature.swift in Sources */,
 				A03D31E02A841024009B0180 /* CardView.swift in Sources */,
 				A0DD1B8F2A8BF0F4008E3D7A /* ThemePicker.swift in Sources */,
 				A043F33F2A8A5BD100E01D4D /* StandupFormFeature.swift in Sources */,
+				A0F60F572B273E010072DA11 /* AppView.swift in Sources */,
 				A0F8221E2AA7A88A001D1962 /* StandupDetailView.swift in Sources */,
 				A0DD1B912A8BF11B008E3D7A /* ThemeView.swift in Sources */,
 				A03D31B12A840720009B0180 /* StandupsApp.swift in Sources */,
