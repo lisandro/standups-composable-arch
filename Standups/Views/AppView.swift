@@ -43,6 +43,19 @@ struct AppFeature: Reducer {
         
         Reduce { state, action in
             switch action {
+            // Not ideal way, because we need to know much about the child
+                /*
+            case let .path(.element(id: id, action: .detail(.saveStandupButtonTapped))):
+                guard case let .some(.detail(detailState)) = state.path[id:id] else { return .none }
+                state.standupsList.standups[id: detailState.standup.id] = detailState.standup
+                return .none
+                 */
+            case let .path(.element(id: _, action: .detail(.delegate(action)))):
+                switch action {
+                case let .standupUpdated(standup):
+                    state.standupsList.standups[id: standup.id] = standup
+                    return .none
+                }
             case .path:
                 return .none
             case .standupsList:
