@@ -14,7 +14,7 @@ struct StandupDetailFeature: Reducer {
         var standup: Standup
     }
     
-    enum Action {
+    enum Action: Equatable {
         case cancelEditStandupButtonTapped
         case delegate(Delegate)
         case deleteButtonTapped
@@ -22,7 +22,7 @@ struct StandupDetailFeature: Reducer {
         case editButtonTapped
         case editStandup(PresentationAction<StandupFormFeature.Action>)
         case saveStandupButtonTapped
-        enum Delegate {
+        enum Delegate: Equatable {
          case standupUpdated(Standup)
         }
     }
