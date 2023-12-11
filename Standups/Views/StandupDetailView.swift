@@ -8,7 +8,7 @@
 import ComposableArchitecture
 import SwiftUI
 
-struct DetailView: View {
+struct StandupDetailView: View {
     let store: StoreOf<StandupDetailFeature>
     
     var body: some View {
@@ -112,7 +112,7 @@ struct DetailView: View {
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            DetailView(store: Store(initialState: StandupDetailFeature.State(standup: .mock), reducer: {
+            StandupDetailView(store: Store(initialState: StandupDetailFeature.State(standup: .mock), reducer: {
                 StandupDetailFeature()
             }))
         }
