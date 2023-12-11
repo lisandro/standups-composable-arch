@@ -10,11 +10,13 @@ import Foundation
 
 struct StandupDetailFeature: Reducer {
     struct State: Equatable {
+        @PresentationState var alert: AlertState<Action.Alert>?
         @PresentationState var editStandup: StandupFormFeature.State?
         var standup: Standup
     }
     
     enum Action: Equatable {
+        case alert(PresentationAction<Alert>)
         case cancelEditStandupButtonTapped
         case delegate(Delegate)
         case deleteButtonTapped
@@ -25,6 +27,9 @@ struct StandupDetailFeature: Reducer {
         enum Delegate: Equatable {
          case standupUpdated(Standup)
         }
+        enum Alert {
+            case confirmDeletion
+        }
     }
     
     var body: some ReducerOf<Self> {
@@ -33,6 +38,13 @@ struct StandupDetailFeature: Reducer {
             case .delegate:
                 return .none
             case .deleteButtonTapped:
+                state.alert = AlertState(title: {
+                    TextState("You sure?")
+                }, actions: {
+                    ButtonState(role: .destructive, action: .confirmDeletion) {
+                        TextState("Delete")
+                    }
+                })
                 return .none
             case .deleteMeetings(atOffsets: let indices):
                 state.standup.meetings.remove(atOffsets: indices)
@@ -49,6 +61,11 @@ struct StandupDetailFeature: Reducer {
                 guard let standup = state.editStandup?.standup else { return .none }
                 state.standup = standup
                 state.editStandup = nil
+                return .none
+            case .alert(.presented(.confirmDeletion)):
+                // TODO: Delete this standup
+                return .none
+            case .alert(.dismiss):
                 return .none
             }
         }

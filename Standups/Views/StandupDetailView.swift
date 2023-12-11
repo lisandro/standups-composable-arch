@@ -84,6 +84,7 @@ struct StandupDetailView: View {
                     viewStore.send(.editButtonTapped)
                 }
             }
+            .alert(store: self.store.scope(state: \.$alert, action: { .alert($0) }))
             .sheet(store: self.store.scope(state: \.$editStandup, action: { .editStandup($0) })) { store in
                 NavigationStack {
                     StandupFormView(store: store)
